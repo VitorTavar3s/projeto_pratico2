@@ -1,0 +1,28 @@
+.app-container {
+  display: flex;
+  /* min-height: 100vh; */
+}
+
+.sidebars-container{
+  display: flex;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 100px; 
+  padding: 2rem;
+}
+
+.resumo-title {
+  text-align: left;
+  color: #777; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1.5rem;
+  margin-left: 460px; 
+  font-weight: 500; 
+  font-size: 1.5rem;
+}

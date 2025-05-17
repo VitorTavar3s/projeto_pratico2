@@ -1,0 +1,191 @@
+/* Estilos específicos para o modal de documento */
+.modal-doc-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-doc-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 650px;
+  max-width: 90%;
+}
+
+.modal-doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-doc-close-button {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #666;
+  line-height: 1;
+  padding: 5px 10px;
+}
+
+
+.modal-doc-header h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.modal-doc-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 15px 0;
+}
+
+.doc-data-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.doc-data-container label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #555;
+ font-size: 0.85rem;
+}
+
+.doc-data-input {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.70rem;
+}
+
+.doc-data-group {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.doc-textarea {
+  width: 100%;
+  height: 350px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: none;
+  overflow-y: auto;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
+
+.doc-textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.modal-doc-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.doc-btn-salvar {
+  background-color: #2e3da5;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.doc-btn-salvar:hover {
+  background-color: #1a2c8b;
+}
+
+.modal-doc-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.doc-actions-left, .doc-actions-right {
+  display: flex;
+  gap: 10px;
+}
+
+.doc-btn-outlined {
+  background: transparent;
+  color: #555;
+  border: 1px solid #555;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 0.65rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s;
+}
+
+.doc-btn-outlined:hover {
+  background-color: #f0f2ff;
+}
+
+.doc-btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.doc-btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+/* Estilos de impressão */
+@media print {
+  .modal-doc-overlay {
+    position: static;
+    background: none;
+  }
+  
+  .modal-doc-header, .modal-doc-close-button {
+    display: none;
+  }
+  
+  .modal-doc-content {
+    box-shadow: none;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+  
+  .doc-textarea {
+    height: auto;
+    border: none;
+    padding: 0;
+  }
+}

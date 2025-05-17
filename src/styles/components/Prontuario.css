@@ -1,0 +1,94 @@
+.prontuario-container {
+  flex: 1; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3fb;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #777;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.divider {
+  height: 1px;
+  background-color: #2980b9;
+  margin: 10px 0;
+}
+
+.consultation-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.consultation-section p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.time-display {
+  font-size: 1.8rem;
+  font-family: 'Courier New', monospace;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.consultation-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #2e3da5;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.consultation-button:hover {
+  background-color: #2980b9;
+}
+
+.consultation-button.active {
+  background-color: #e74c3c;
+}
+
+
+.actions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto; 
+  padding-bottom: 60px;
+}
+
+.action-button {
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button.prescription {
+  background-color: #2e3da5;
+  color: white;
+}
+
+.action-button.document {
+  background-color: #2e3da5;
+  color: white;
+}
+
+.action-button:hover {
+  opacity: 0.9;
+}
